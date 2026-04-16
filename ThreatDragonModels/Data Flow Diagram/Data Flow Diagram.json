@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "d0155d0c-42ac-43eb-beff-fca3a9941f4b",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Guest \n(web/mobile)",
@@ -155,6 +155,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -238,7 +239,6 @@
               ]
             },
             "id": "dac13ff2-c0ea-469e-851e-56e7bb16c49e",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Resort staff",
@@ -272,6 +272,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -355,7 +356,6 @@
               ]
             },
             "id": "463f7b5a-05ec-45f5-a304-550e10c8d4b2",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "External \nIdentity Provider",
@@ -389,6 +389,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -472,7 +473,6 @@
               ]
             },
             "id": "ca118c45-8658-4d8e-a2ce-11f4da148b14",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Identity \nResolver",
@@ -509,6 +509,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -592,7 +593,6 @@
               ]
             },
             "id": "735a28e2-eec5-4237-a8bf-8425564c31f5",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "Media\nLinker\nAPI",
@@ -629,6 +629,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -712,7 +713,6 @@
               ]
             },
             "id": "f171adca-fc5f-4fa1-9895-5ea23916db7b",
-            "zIndex": 6,
             "data": {
               "type": "tm.Process",
               "name": "AI\nFacial\nRecog.",
@@ -749,6 +749,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -832,7 +833,6 @@
               ]
             },
             "id": "b95ee21f-b4b0-4b94-aef0-1dbf1853fc8e",
-            "zIndex": 7,
             "data": {
               "type": "tm.Process",
               "name": "Booking\nService",
@@ -872,6 +872,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 8,
             "ports": {
               "groups": {
                 "top": {
@@ -955,7 +956,6 @@
               ]
             },
             "id": "57f5c1c3-e4de-4bf0-9a1e-16cb111db257",
-            "zIndex": 8,
             "data": {
               "type": "tm.Store",
               "name": "Guest PII Database",
@@ -996,6 +996,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 9,
             "ports": {
               "groups": {
                 "top": {
@@ -1079,7 +1080,6 @@
               ]
             },
             "id": "a2b4451a-6ed1-4511-add1-113f05892786",
-            "zIndex": 9,
             "data": {
               "type": "tm.Store",
               "name": "Pseudonymized \nOperations DB",
@@ -1120,6 +1120,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 10,
             "ports": {
               "groups": {
                 "top": {
@@ -1203,7 +1204,6 @@
               ]
             },
             "id": "a7d9b0cf-fd4f-4c63-8538-afd57fa0a02f",
-            "zIndex": 10,
             "data": {
               "type": "tm.Store",
               "name": "CCTV Media DB",
@@ -1240,7 +1240,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "JWT",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1254,7 +1254,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "JWT"
             ],
             "id": "e124ff45-e3a3-4024-a9d0-39e92873dd0a",
             "source": {
@@ -1320,7 +1320,13 @@
             "target": {
               "cell": "735a28e2-eec5-4237-a8bf-8425564c31f5",
               "port": "3f8101dd-0387-40ae-8a7d-133ad98bba07"
-            }
+            },
+            "vertices": [
+              {
+                "x": 980,
+                "y": 280
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1366,7 +1372,13 @@
             "target": {
               "cell": "735a28e2-eec5-4237-a8bf-8425564c31f5",
               "port": "9b73e34f-870f-4501-a3e8-fde45daa4d2b"
-            }
+            },
+            "vertices": [
+              {
+                "x": 730,
+                "y": 353
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1388,7 +1400,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "JWT",
+              "name": "Mapping Request",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1402,7 +1414,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "JWT"
+              "Mapping Request"
             ],
             "id": "235d34e4-e104-4856-8533-7e5d12c49343",
             "source": {
@@ -1422,82 +1434,7 @@
                 "x": 940,
                 "y": 410
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           }
         ]
       }
