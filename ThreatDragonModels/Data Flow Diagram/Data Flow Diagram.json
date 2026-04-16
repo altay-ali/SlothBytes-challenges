@@ -1552,7 +1552,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Identity Matching Data",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1566,7 +1566,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Identity Matching Data"
             ],
             "id": "6355ca25-a684-40d6-81c3-fc0d1249ae87",
             "source": {
@@ -1582,7 +1582,17 @@
                 "x": 730,
                 "y": 353
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -1995,17 +2005,7 @@
                 "x": 920,
                 "y": 380
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "flow",
