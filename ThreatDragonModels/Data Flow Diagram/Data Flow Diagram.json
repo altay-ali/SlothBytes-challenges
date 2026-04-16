@@ -28,8 +28,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "7a789363-a572-4d69-8b1d-153ba9af88fe",
             "zIndex": -1,
+            "id": "7a789363-a572-4d69-8b1d-153ba9af88fe",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -39,7 +39,6 @@
               "crossingFlows": [
                 "e124ff45-e3a3-4024-a9d0-39e92873dd0a",
                 "23616747-36a9-4932-b3c8-951edbcf53f3",
-                "012ae732-154f-4c1f-8922-5a968e6b1ba6",
                 "235d34e4-e104-4856-8533-7e5d12c49343"
               ],
               "containedElements": [
@@ -167,7 +166,7 @@
           },
           {
             "position": {
-              "x": 720,
+              "x": 729.9999999999998,
               "y": 60
             },
             "size": {
@@ -1271,6 +1270,13 @@
                 "informationDisclosure": 1,
                 "denialOfService": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -2004,64 +2010,6 @@
             },
             "width": 200,
             "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "7a789363-a572-4d69-8b1d-153ba9af88fe"
-              ]
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "012ae732-154f-4c1f-8922-5a968e6b1ba6",
-            "source": {
-              "x": 443,
-              "y": 790
-            },
-            "target": {
-              "cell": "57f5c1c3-e4de-4bf0-9a1e-16cb111db257",
-              "port": "93bec28c-b46e-453f-a407-446e37ba6b59"
-            },
-            "vertices": [
-              {
-                "x": 670,
-                "y": 910
-              },
-              {
-                "x": 860,
-                "y": 860
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
             "zIndex": 11,
             "connector": "smooth",
             "data": {
@@ -2121,6 +2069,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -2204,7 +2153,6 @@
               ]
             },
             "id": "6f8f6302-8f78-44f1-97a9-84d113a0fe2d",
-            "zIndex": 12,
             "data": {
               "type": "tm.Process",
               "name": "API\nGateway",
