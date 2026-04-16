@@ -1270,13 +1270,6 @@
                 "informationDisclosure": 1,
                 "denialOfService": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1812,7 +1805,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Service Requests",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1826,7 +1819,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Service Requests"
             ],
             "id": "e56e8277-3a00-494d-be7b-f5853498479d",
             "source": {
@@ -1858,7 +1851,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Management Requests",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1872,7 +1865,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Management Requests"
             ],
             "id": "2fa73f59-284b-4bd2-aa81-0389d2e96dbb",
             "source": {
@@ -1882,7 +1875,13 @@
             "target": {
               "cell": "6f8f6302-8f78-44f1-97a9-84d113a0fe2d",
               "port": "e4b8839d-112f-4e23-b96b-ddf3aa364503"
-            }
+            },
+            "vertices": [
+              {
+                "x": 690,
+                "y": 170
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1950,7 +1949,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Routed Media Requests",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1964,7 +1963,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Routed Media Requests"
             ],
             "id": "a5ce199d-c25c-438e-ae97-65647d892622",
             "source": {
@@ -1977,7 +1976,11 @@
             },
             "vertices": [
               {
-                "x": 910,
+                "x": 820,
+                "y": 277
+              },
+              {
+                "x": 860,
                 "y": 240
               },
               {
@@ -1992,7 +1995,17 @@
                 "x": 920,
                 "y": 380
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
